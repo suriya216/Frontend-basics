@@ -13,7 +13,10 @@
             th,td{
                 padding-top: 2px;
                 padding-bottom: 2px;
-                padding-left: 8px;
+                padding-left: 10px;
+            }
+            #i{
+                padding: 3px;
             }
         </style>
     </head>
@@ -21,25 +24,25 @@
         <table border="1" align="center">
             <th colspan="3" id="header" style="color: crimson;"><center>Registration Form</center></th>
             <tr>
-                <td><center>Enter Name</center></td>
+                <td id="i"><center>Enter Name</center></td>
                 <td>
                     <input type="text" name="name">
                 </td>
             </tr>
             <tr>
-                <td><center>Enter Password</center></td>
+                <td id="i"><center>Enter Password</center></td>
                 <td>
                     <input type="password" name="password">
                 </td>
             </tr>
             <tr>
-                <td><center>Enter Address</center></td>
+                <td id="i"><center>Enter Address</center></td>
                 <td>
                     <textarea name="Address" rows="10" col="10">Delete and add your address</textarea>
                 </td>
             </tr>
             <tr>
-                <td><center>Select Game</center></td>
+                <td id="i"><center>Select Game</center></td>
                 <td>
                     <input type="checkbox" name="game1" value="hockey">
                     <label for="game1">Hockey</label><br>
@@ -54,7 +57,7 @@
                 </td>
             </tr>
             <tr>
-                <td><center>Gender</center></td>
+                <td id="i"><center>Gender</center></td>
                 <td>
                     <input type="radio" name="gender1" value="male">
                     <label for="gender1">Male</label>
@@ -63,10 +66,10 @@
                 </td>
             </tr>
             <tr>
-                <td><center>Select ur age</center></td>
+                <td id="i"><center>Select ur age</center></td>
                 <td>
                     <select>
-                        <option></option>
+                        <option>Select</option>
                         <option value="17">17</option>
                         <option value="18">18</option>
                         <option value="19">19</option>
@@ -79,7 +82,7 @@
                 </td>
             </tr>
             <tr>
-                <td><center>Select photo</center></td>
+                <td id="i"><center>Select photo</center></td>
                 <td>
                     <input type="file" name="photo">
                 </td>
@@ -87,9 +90,9 @@
             <tr>
                 <td colspan="3">
                     <center>
-                    <input type="button" onclick="alert('Your data has been saved')" value="    Click Me    ">
-                    <input type="reset" value="    Reset    ">
-                    <input type="submit" onclick="alert('Your data has been submitted')" value="   Submit Form   ">
+                    <input type="button" onclick="alert('Your data has been saved')" value="     Click Me     " style="padding: 5px;">
+                    <input type="reset" value="     Reset     " style="padding: 5px;">
+                    <input type="submit" onclick="alert('Your data has been submitted')" value="    Submit Form    " style="padding: 5px;">
                     </center>
                 </td>
             </tr>
