@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <style>
+            #header{
+                background-color: rgb(216, 195, 131);
+                border-color: crimson;
+            }
+            tr{
+                background-color: aqua;
+            }
+            th,td{
+                padding-top: 2px;
+                padding-bottom: 2px;
+                padding-left: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <table border="1" align="center">
+            <th colspan="3" id="header" style="color: crimson;"><center>Registration Form</center></th>
+            <tr>
+                <td><center>Enter Name</center></td>
+                <td>
+                    <input type="text" name="name">
+                </td>
+            </tr>
+            <tr>
+                <td><center>Enter Password</center></td>
+                <td>
+                    <input type="password" name="password">
+                </td>
+            </tr>
+            <tr>
+                <td><center>Enter Address</center></td>
+                <td>
+                    <textarea name="Address" rows="10" col="10">Delete and add your address</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><center>Select Game</center></td>
+                <td>
+                    <input type="checkbox" name="game1" value="hockey">
+                    <label for="game1">Hockey</label><br>
+                    <input type="checkbox" name="game2" value="football">
+                    <label for="game2">Football</label><br>
+                    <input type="checkbox" name="game3" value="badminton">
+                    <label for="game3">Badminton</label><br>
+                    <input type="checkbox" name="game4" value="cricket">
+                    <label for="game4">Cricket</label><br>
+                    <input type="checkbox" name="game5" value="volleyball">
+                    <label for="game5">volley ball</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td><center>Gender</center></td>
+                <td>
+                    <input type="radio" name="gender1" value="male">
+                    <label for="gender1">Male</label>
+                    <input type="radio" name="gender2" value="female">
+                    <label for="gender2">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td><center>Select ur age</center></td>
+                <td>
+                    <select>
+                        <option></option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><center>Select photo</center></td>
+                <td>
+                    <input type="file" name="photo">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <center>
+                    <input type="button" onclick="alert('Your data has been saved')" value="    Click Me    ">
+                    <input type="reset" value="    Reset    ">
+                    <input type="submit" onclick="alert('Your data has been submitted')" value="   Submit Form   ">
+                    </center>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
