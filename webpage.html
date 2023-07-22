@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WEBPAGE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <fieldset>
+        <legend>Your Details</legend>
+        <div class="div-details">
+            <div class="name">
+                <label>Name: &nbsp;</label>
+                &nbsp; <input type="text" name="name">
+            </div>
+            <div class="mail">
+                <label>email: &nbsp</label>
+                &nbsp; <input type="mail" name="mail">
+            </div>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Your Review:</legend>
+        <table>
+            <tr>
+                <label for="option">How did you hear aboout us?</label>
+                <select name="socialnetworks">
+                    <option value="google">google</option>
+                    <option value="google">facebook</option>
+                    <option value="google">advertisement</option>
+                    <option value="google">friends</option>
+                </select>
+                <br>
+                <label for="visit">Would you visit again?</label>
+                <input type="radio" name="visit" id="Yes" value="Yes">
+                <label for="Yes">Yes</label>
+                <input type="radio" name="visit" id="No" value="No">
+                <label for="No">No</label>
+                <input type="radio" name="visit" id="Maybe" value="Maybe">
+                <label for="Maybe">Maybe</label>
+                <br>
+                <label>Comments:</label>
+                <br>
+                <textarea rows="4" cols="20"></textarea>
+                <br>
+                <input type="checkbox" id="check">
+                <label for="check">Sign me up for email updates.</label>
+                <br>
+                <input type="submit">
+            </tr>
+        </table>
+    </fieldset>
+</body>
+
+</html>

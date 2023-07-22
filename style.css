@@ -1,0 +1,13 @@
+body{
+    background-color: #FAFAD2;
+    color: #E8DEE5;
+    font-family: 'Times New Roman','Arial';
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    font-style: italic;
+    padding: 10px,20px,12px,22px;
+    margin:auto;
+    width: 500px;
+    height: 320px;
+}
