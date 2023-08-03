@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .center{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+        }
+        .border{
+            border: 5px solid rgb(89, 53, 15);
+            padding: 20px;
+            background-color: rgba(217, 181, 109, 0.818);
+            border-radius: 5%;
+        }
+        .button{
+            background-color:rgb(89, 53, 15);
+            color: rgba(217, 181, 109, 0.818);
+            margin-bottom: 7px;
+            margin-top: 7px;
+            border-radius: 5%;
+            border: none;
+            width: 50px;
+            font-size: 12px;
+            padding: 5px;
+        }
+        .button:hover{
+            background-color: rgba(89, 53, 15, 0.712);
+        }
+    </style>
+<body>
+  <script type="text/javascript">
+    function multiply(){
+      a=Number(document.Math.first.value);
+      b=Number(document.Math.second.value);
+      c=a*b;
+      document.Math.total.value=c;
+    }
+    function addition(){
+      a=Number(document.Math.first.value);
+      b=Number(document.Math.second.value);
+      c=a+b;
+      document.Math.total.value=c;
+    }
+    function subtraction(){
+      a=Number(document.Math.first.value);
+      b=Number(document.Math.second.value);
+      c=a-b;
+      document.Math.total.value=c;
+    }
+    function division(){
+      a=Number(document.Math.first.value);
+      b=Number(document.Math.second.value);
+      c=a/b;
+      document.Math.total.value=c;
+    }
+  </script>
+<div class="center">
+    <div class="border">
+  <form name="Math">
+    Enter value 1: <input type="text" name="first">
+    <br>
+    Enter value 2: <input type="text" name="second">
+    <br><center>
+    <input class="button" type="button" value="ADD" onclick="javascript:addition();">
+    <input class="button" type="button" value="SUB" onclick="javascript:subtraction();">
+    <input class="button" type="button" value="MUL" onclick="javascript:multiply();">
+    <input class="button" type="button" value="DIV" onclick="javascript:division();"></center>
+    Get Result: <input type="text" name="total">
+   <br>
+   </form>
+    </div>
+</div>
+  </body>
+  </html>

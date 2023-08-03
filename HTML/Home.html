@@ -1,65 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-<style>
-
-.flip-box {
-  background-color: transparent;
-  width: 300px;
-  height: 200px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px;
-  border-radius: 32px;
-}
-
-.flip-box-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-  border-radius: 32px;
-}
-
-.flip-box:hover .flip-box-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-box-front, .flip-box-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  border-radius: 32px;
-}
-
-.flip-box-front {
-  background-color: #bbb;
-  color: black;
-}
-
-.flip-box-back {
-  background-color: #1f406b;
-  color: rgb(0, 0, 0);
-  transform: rotateY(180deg);
-}
-</style>
+  <meta charset="ISO-8859-1">
+  <title>HOME PAGE</title>
+  <style>
+    body {
+      background-image: url(homeimg.jpg);
+      background-size: cover;
+    }
+  </style>
 </head>
-<body>
-   <div class="flip-box">
-	<div class="flip-box-inner">
-	  <div class="flip-box-front">
-		<img src="house1.png" alt="Paris" style="width:100%;height:200px;border-radius: 32px;">
-	  </div>
-	  <div class="flip-box-back">
-		<h3>HOME</h3>
-			<p>A site of supreme comfort and familial intimacy, operating as a buffer to the greater world.</p>
-	  </div>
-	</div>
-  </div>
+<body style="background-repeat: no-repeat;">
+  <center><h2>WELCOME TO ACE CAR'S</h2></center>
 </body>
 </html>

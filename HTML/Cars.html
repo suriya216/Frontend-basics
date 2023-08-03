@@ -1,70 +1,26 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="ISO-8859-1">
-<title>Cars</title>
-<style>
-	.flip-box {
-  background-color: transparent;
-  width: 300px;
-  height: 200px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px;
-  border-radius: 32px;
-}
-
-.flip-box-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-  border-radius: 32px;
-}
-
-.flip-box:hover .flip-box-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-box-front, .flip-box-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  border-radius: 32px;
-}
-
-.flip-box-front {
-  background-color: #bbb;
-  color: black;
-}
-
-.flip-box-back {
-  background-color: #49b0eb;
-  color: rgb(0, 0, 0);
-  transform: rotateY(180deg);
-}
-</style>
+  <meta charset="ISO-8859-1">
+  <title>Cars</title>
+  <style>
+  </style>
 </head>
-<body>
-	<div class="flip-box">
-		<div class="flip-box-inner">
-		  <div class="flip-box-front">
-			<img src="car1.jpg" alt="Paris" style="width:100%;height:200px;border-radius: 32px;">
-		  </div>
-		  <div class="flip-box-back">
-			<h3>CARS</h3>
-			<ul>
-				<li>Honda Civic</li>
-				<li>Kia Carnival</li>
-				<li>Ford Endeavour</li>
-				<li>Skoda Octavia</li>
-				<li>Maruti Suzuki Ertiga</li>
-			</ul>
-		  </div>
-		</div>
-	  </div>
+
+<body background="carsimg.jpg" style="object-fit: cover; background-repeat: no-repeat;">
+  <b>ACE GT-5000R</b>
+  <ul>
+    <li>MAX SPEED:224kmph</li>
+    <li>HORSE POWER:2254hp</li>
+    <li>PRICE:$3.2b</li>
+  </ul>
+  <b>ACE TR-8000X</b>
+  <ul>
+    <li>MAX SPEED:232kmph</li>
+    <li>HORSE POWER:2174hp</li>
+    <li>PRICE:$2.8b</li>
+  </ul>
 </body>
+
 </html>
