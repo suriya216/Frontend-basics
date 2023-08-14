@@ -1,0 +1,127 @@
+.Container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 100px;
+  right: -30px;
+}
+
+.title {
+  color: #ffffff;
+  font-family: "DM Serif Display";
+  font-size: 42px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+input {
+  display: block;
+  box-sizing: border-box;
+  width: 320px;
+  padding: 0.5rem 0.75rem;
+  border-radius: 3px;
+}
+
+.abtpage {
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+label {
+  font-family: "paduak";
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #ffffff;
+  margin-top: 250px;
+}
+
+.log {
+  display: flex;
+  font-family: "DM Serif Display";
+  font-size: 42px;
+}
+.rgstrnow {
+  color: #499ffe;
+}
+
+.frgtpswd {
+  color: #499ffe;
+}
+
+.loginbtn {
+  width: 40px;
+  color: #ffffff;
+  font-family: "Outfit";
+  background-color: #0160c8;
+  border-radius: 7px;
+  padding-top: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 7px;
+}
+
+.form-main{
+  display: flex;
+  flex-direction: row;
+}
+
+.logimg{
+  display: flex;
+  position: relative;
+  top: 100px;
+}
+
+.Container-1{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.figimg{
+  display: flex;
+  align-items: flex-start;
+  height: 400px;
+  width: 370px;
+  position: relative;
+  top: 100px;
+}
+
+.form{
+  display: flex;
+  position: relative;
+  top:-2px;
+}
+
+.submit{
+  color: #ffffff;
+  font-family: "Outfit";
+  background-color: #0160c8;
+  border-radius: 7px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+#Regcolor{
+  color: #499ffe;
+}

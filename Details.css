@@ -1,0 +1,79 @@
+body {
+    background-color: #001124;
+}
+
+.Container {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-btn {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end
+}
+
+.info {
+    color: #ffffff;
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.info:hover {
+    text-decoration: underline;
+    text-decoration-color: #015FC7;
+    text-underline-offset: 5px;
+}
+
+.btn-vote {
+    margin-left: 10px;
+}
+
+.vote {
+    color: #ffffff;
+    font-size: 24px;
+    background-color: #015FC7;
+    border-radius: 7px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+    right: -10rem;
+}
+
+.profile-img {
+    display: flex;
+}
+
+.pro-details {
+    align-self: flex-end;
+    position: relative;
+    right: -4rem;
+}
+
+.pro-name,
+.pro-age,
+.pro-mob,
+.pro-mail,
+.pro-add {
+    color: #015FC7;
+    font-size: 18px;
+}
+
+.pro-name-value,
+.pro-age-value,
+.pro-mob-num,
+.pro-mail-id,
+.pro-address {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+a{
+    text-decoration: none;
+}
