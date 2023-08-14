@@ -1,0 +1,65 @@
+.Container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 10px;
+}
+
+.header-msg{
+  font-weight: bold;
+  position: relative;
+  left: -192px;
+  bottom: -15px;
+}
+
+.terms-check{
+  font-weight: 200;
+  font-size: 18px;
+  display: inline-block;
+  position: relative;
+  left: -270px;
+}
+
+.buttons{
+  color: #ffffff;
+  font-family: 'Tienne';
+  display: flex;
+  align-items:center;
+  position: relative;
+  bottom: -10px;
+  right: -332px;
+}
+
+.cancel{
+  position: relative;
+  left: -20px;
+  background-color: #0160c8;
+  padding-top: 5px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 5px;
+  justify-content: space-around;
+}
+
+.proceed{
+  background-color: #0160c8;
+  padding-top: 5px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 5px;
+  justify-content: space-around;
+}
+
+.box-model{
+  border: 3px solid #015FC7;
+}
+
+.box-content1{
+  font-size: 24px;
+}
+
+li{
+  font-size: 18px;
+}
+
