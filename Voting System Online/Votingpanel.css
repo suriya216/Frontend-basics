@@ -1,0 +1,68 @@
+body {
+    background-color: #001124;
+}
+
+.Main-Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.top-msg {
+    color: #ffffff;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.nominee-1 {
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    padding: 25px;
+    border-radius: 7px;
+}
+
+.nominee-2 {
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    padding: 25px;
+    border-radius: 7px;
+}
+
+.nominee-3 {
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    padding: 25px;
+    border-radius: 7px;
+}
+
+.nominee-4 {
+    background-color: #fffcfc;
+    margin-bottom: 10px;
+    padding: 25px;
+    border-radius: 7px;
+}
+
+.check-msg {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.btn{
+    display: flex;
+}
+
+.submit {
+    color: #ffffff;
+    font-size: 24px;
+    background-color: #015FC7;
+    border-radius: 7px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+button{
+    border: none;
+}
