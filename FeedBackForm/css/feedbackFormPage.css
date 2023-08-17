@@ -83,3 +83,31 @@ textarea{
     overflow: hidden;
     
 }
+
+.btn-sub{
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-cancel{
+    display: flex;
+    margin-right: 20px;
+    color: #000000;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 7px;
+ }
+
+ .btn-submit{
+    color: #000000;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 7px;
+ }
+
+ .submit,
+ .cancel{
+    color: #000000;
+    background-color: transparent;
+    border: none;
+ }

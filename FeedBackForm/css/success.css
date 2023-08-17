@@ -1,0 +1,32 @@
+body{
+    background-color: #1E90FF;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-size: 24px;
+}
+
+.confirm-msg{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.backward{
+    display: flex;
+    justify-content: center;
+}
+
+.submit{
+    color: #000000;
+    border: 0.1em solid #b9b9b996;
+    background-color: #ffffff;
+    padding: 7px;
+    border-radius: 7px;
+    position: relative;
+    right: -14px;
+    bottom: -4px;
+}
+
+.success-img{
+    display: flex;
+}

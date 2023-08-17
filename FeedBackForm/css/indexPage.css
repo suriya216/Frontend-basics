@@ -145,3 +145,14 @@ body{
     padding: 10px;
     border-radius: 7px;
  }
+
+ a{
+    text-decoration: none;
+ }
+
+ .submit,
+ .cancel{
+    color: #ffffff;
+    background-color: transparent;
+    border:none;
+ }
