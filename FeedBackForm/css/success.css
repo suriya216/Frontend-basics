@@ -5,6 +5,12 @@ body{
     font-size: 24px;
 }
 
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .confirm-msg{
     display: flex;
     justify-content: center;
@@ -29,4 +35,5 @@ body{
 
 .success-img{
     display: flex;
+    justify-content: center;
 }
