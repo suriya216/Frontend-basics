@@ -5,46 +5,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
-        
-    </script>
 </head>
-
 <body>
     <div>
-        <label for="name">Enter your name:</label>
-        <input type="text" id="name">
-        <br>
-        <label for="name">Enter your password:</label>
-        <input type="password" id="pswd">
-        <br>
-        <label for="year">Which year?</label>
-        <input type="radio" id="year">Yr 1
-        <input type="radio" id="year">Yr 2
-        <input type="radio" id="year">Yr 3
-        <br>
-        <label for="sub">Subject registered:</label>
-        <input type="checkbox" id="sub">E101
-        <input type="checkbox" id="sub">E102
-        <input type="checkbox" id="sub">E103
-        <br>
-        <label for="name">Select Day:</label>
-        <select name="day" id="day">
-            <option value="Monday">Monday</option>
-            <option value="Tuesay">Tuesay</option>
-            <option value="Wednesday">Wednesday</option>
-            <option value="Thursday">Thursday</option>
-            <option value="Friday">Friday</option>
-            <option value="Saturday">Saturday</option>
-            <option value="Sunday">Sunday</option>
-        </select>
-        <br>
-        <textarea name="request" id="request" cols="30" rows="5"
-            placeholder="Enter your special request here"></textarea>
-        <br>
-        <button>SEND</button>
-        <button>CLEAR</button>
-    </div>
+        <form name="myForm" method="post" onsubmit="return check()">
+            <label for="name">Enter your name:</label>
+            <input type="text" id="name" name="name">
+            <br>
+            <label for="name">Enter your password:</label>
+            <input type="password" id="pass" name="pass">
+            <br>
+            <label for="year">Which year?</label>
+            <input type="radio" name="year" id="year1" value="1">Yr 1
+            <input type="radio" name="year" id="year2" value="2">Yr 2
+            <input type="radio" name="year" id="year3" value="3">Yr 3
+            <br>
+            <label for="sub">Subject registered:</label>
+            <input type="checkbox" name="sub1" id="sub1" value="E101">E101
+            <input type="checkbox" name="sub2" id="sub2" value="E102">E102
+            <input type="checkbox" name="sub3" id="sub3" value="E103">E103
+            <br>
+            <label for="name">Select Day:</label>
+            <select name="day" id="day">
+                <option value="Monday">Monday</option>
+                <option value="Tuesay">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+                <option value="Sunday">Sunday</option>
+            </select>
+            <br>
+            <textarea name="request" id="request" cols="30" rows="5"
+                placeholder="Enter your special request here"></textarea>
+                <br>
+                <button type="submit">SEND</button>
+                <button type="reset">CLEAR</button>
+            </form>
+        </div>
+        <script> 
+            var year2=document.getElementById("year2");
+            year2.checked=true;
+            function check(){
+                var name=document.myForm.name.value;
+                var pattern=/^[A-Za-z]+$/;
+                var sub1=document.myForm.sub1;
+                var sub2=document.myForm.sub2;
+                var sub3=document.myForm.sub3;
+                var day=document.myForm.day.value;
+                var password=document.myForm.pass.value;
+                var year=document.getElementById("year");
+                var day=document.getElementById("day");
+                if(name=="" && password=="" && (!sub1.checked && !sub2.checked && !sub3.checked)){
+                    alert("All the feilds must be entered");
+                    return false;
+                }
+                else if(name==null || name==""){
+                    alert("Name can't be blank");
+                    return false;
+                }else if(!name.match(pattern)){
+                    alert("Name does not contains any special character")
+                    return false;
+                }
+                else if(password.length<6 || password.length>9){
+                    alert("Password length must be in the range of 5 to 8");
+                    return false;
+                }
+                else if(year.value != 2){
+                    alert("Year should be marked as 2nd year");
+                    return false;
+                }
+        }
+    </script>
 </body>
 
 </html>

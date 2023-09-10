@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            width: 10rem;
+            height: 20px;
+            border-color:  rgb(101, 188, 228);
+        }
+        textarea,select{
+            border-color: rgb(101, 188, 228);
+        }
+        select{
+            height: 30px;
+            width: 190px;
+        }
+        .btn{
+            display: flex;
+            position: relative;
+            right: -180px;
+        }
+        button{
+            padding: 8px;
+            border-color: rgb(101, 188, 228);
+        }
+    </style>
+</head>
+<body>
+    <span name="msg">Please fill out the formbelow. If you have any questions, please e-mail</span><br>
+    <a href="mailto:white_paper@ektron.com">white_paper@ektron.com</a><br>
+    <span name="req-msg"><font color="red">* </font>- required feilds</span>
+    <hr color="aqua">
+    <form method="post" name="paper" onsubmit="emailcheck()">
+        <table>
+                <tr>
+                    <td>
+                        <label for="fname"><font color="red">*</font>First Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="fname" name="fname" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="lname"><font color="red">*</font>Last Name:</label>  
+                    </td>
+                    <td>
+                        <input type="text" id="lname" name="lname" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="cname">Company Name:</label>
+                    </td>
+                    <td>                   
+                        <input type="text" id="cname" name="cname">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="web">Company/Personal Website:</label>                    
+                    </td>
+                    <td>
+                        <input type="text" id="web" name="web">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email"><font color="red">*</font>Email:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="email" name="email" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="num">Phone:</label>
+                    </td>
+                    <td>
+                        <input type="number" id="num" name="num">
+                        <label for="ext">Ext:</label>
+                        <input type="text" id="ext" name="ext">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="state">State/Province:</label>
+                    </td>
+                    <td>
+                        <select name="state" id="state">
+                            <option>Select for USA or Canada</option>
+                            <option value="USA">USA</option>
+                            <option value="Canada">Canada</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="country"><font color="red">*</font>Country:</label>
+                    </td>
+                    <td>
+                        <select name="country" id="country" required>
+                            <option value="United States">United States</option>
+                            <option value="DC">DC</option>
+                            <option value="Time Square">Time Square</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        <label for="comm">Comments:</label><br>
+        <textarea name="comm" id="comm" cols="80" rows="3"></textarea>
+        <div class="btn">
+                    <button type="submit" name="request">Request white paper</button>
+        </div>
+    </form>
+    <script>
+        var mail=document.getElementById("email");
+        function emailcheck(){
+            var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+            if (!mail.value.match(validRegex)) {
+                alert("Invalid email address!");
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

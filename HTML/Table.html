@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="ISO-8859-1">
+        <title>Form</title>
+        <style>
+            #head{
+                background-color: rgb(201, 197, 194);
+            }
+        </style>
+    </head>
+<body>
+    <table border="2px">
+        <from name="myTable" method="post">
+            <tr>
+                <th id="head">Name</th>
+                <th id="head">Value</th>  
+            </tr>
+            <tr>
+                <td>
+                    <label>Name</label>
+                </td>
+                <td>
+                    <input type="text" id="name" name="name" required>
+                </td>
+            </tr>
+            <tr>
+            <td>
+                <label>Sex</label>
+            </td>
+            <td>
+                <input type="radio" id="male" name="gender">Male<br>
+                <input type="radio" id="female" name="gender">Female</td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Eye color</label>
+                </td>
+                <td>
+                    <select id="color" name="color">
+                        <option id="g">green</option>
+                        <option id="bl">Black</option>
+                        <option id="b">Brown</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Check all that apply</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="6f" name="6f">Over 6 feet tall<br>
+                    <input type="checkbox" id="200p" name="200p">Over 200 pounds
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Describe your athletic ability:<br>
+                    <textarea rows="5" cols="40" required></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="submit" onclick=check()>Enter my information</button>
+                </td>
+            </tr>
+        </from>
+    </table>
+    <script>
+        var name=document.getElementById("name").value;
+        var eye=document.getElementById("bl").value;
+        var m=document.getElementById("male").value;
+        var f=document.getElementById("female").value;
+        var c1=document.getElementById("6f").value;
+        var c2=document.getElementById("200p").value;
+        function check(){
+            if(name=="" && !(m.checked && f.checked) && !eye.checked && !(c1.checked&&c2.checked)){
+                alert("All feilds must be filled");
+                return false;
+            }
+            if(!eye.checked){
+                alert("Eye color should be black");
+                return false;
+            }
+            if(!(m.checked&&f.checked)){
+                alert("Select your gender");
+                return false;
+            }
+            if(!(c1.checked&&c2.checked)){
+                alert("Select the checkbox");
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
