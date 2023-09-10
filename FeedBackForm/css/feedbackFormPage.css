@@ -1,0 +1,113 @@
+body{
+    background-color: #1E90FF;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-size: 24px;
+}
+
+.container-main{
+    display: flex;
+    justify-content: center;
+}
+
+.vertical-line {
+    border-left: 2px solid rgba(88, 86, 86, 0.363);
+}
+
+.stf-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #ffffff;
+    padding: 60px;
+    border-radius: 7px;
+    width: 1000px;
+}
+
+.point-1,
+.point-2,
+.point-3,
+.point-4,
+.point-5,
+.point-6,
+.point-7{
+    background-color: #b9b7b7a8;
+    padding: 20px 60px;
+    border-radius: 7px;
+    width: 1000px;
+    margin-bottom: 3px;
+}
+
+.feedback-point :hover{
+    background-color: #d8d8d8da;
+}
+
+@media screen and (max-width:480px) {
+    
+    body{
+        background-color: #1E90FF;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 100;
+        font-size: 16px;
+    }
+    .stf-details{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #ffffff;
+        padding: 15px;
+        border-radius: 7px;
+        width: 400px;
+    }
+
+    .point-1,
+    .point-2,
+    .point-3,
+    .point-4,
+    .point-5,
+    .point-6,
+    .point-7{
+        background-color: #b9b7b7a8;
+        padding: 5px 15px;
+        border-radius: 7px;
+        width: 400px;
+        margin-bottom: 3px;
+    }
+    .feedback-point :hover{
+        background-color: #d8d8d8da;
+    }
+}
+
+textarea{
+    border: none;
+    overflow: hidden;
+    
+}
+
+.btn-sub{
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-cancel{
+    display: flex;
+    margin-right: 20px;
+    color: #000000;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 7px;
+ }
+
+ .btn-submit{
+    color: #000000;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 7px;
+ }
+
+ .submit,
+ .cancel{
+    color: #000000;
+    background-color: transparent;
+    border: none;
+ }

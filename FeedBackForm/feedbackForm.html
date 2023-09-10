@@ -5,36 +5,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback-Form</title>
     <link rel="icon" type="image/svg" href="assets/titleimg.svg">
+    <link rel="stylesheet" href="css/feedbackFormPage.css">
 </head>
 <body>
-    <div class="Container">
-        <div class="stf-details">
-            <div class="left-details">
-                <span class="name">Name:</span>
-                <span class="name_1">John Doe</span>
+    <div class="container-main">
+        <form method="get" action="success.html">
+            <div class="Container">
+                <div class="stf-details">
+                    <div class="left-details">
+                        <span class="name">Name:</span>
+                        <span class="name_1">John Doe</span>
+                        <br>
+                        <span class="dept">Department:</span>
+                        <span class="dept_1">AAA</span>
+                        <br>
+                        <span class="sec">Section:</span>
+                        <span class="sec_1">A</span>
+                    </div>
+                    <div class = "vertical-line">
+                    </div>
+                    <div class="right-details">
+                        <span class="code">Subject Code:</span>
+                        <span class="code_1">21XY08</span>
+                        <br>
+                        <span class="sub">Subject:</span>
+                        <span class="sub_1">BBB</span>
+                        <br>
+                        <span class="yr">Academic Year:</span>
+                        <span class="yr_1">2023-24</span>
+                    </div>
+                </div>
+                <br>
+                <div class="feedback-point">
+                    <div class="point-1">
+                        <span class="p-1-question">
+                            Punctuality
+                        </span>
+                        <br>
+                        <input type="radio" class="p-1-answer" name="p1" id="p1" required>
+                        Very Good
+                        <input type="radio" class="p-1-answer" name="p1" id="p1" required>
+                        Good
+                        <input type="radio" class="p-1-answer" name="p1" id="p1" required>
+                        Satisfactory
+                        <input type="radio" class="p-1-answer" name="p1" id="p1" required>
+                        Average
+                    </div>
+                    <div class="point-2">
+                        <span class="p-2-question">
+                            Portion coverage on time
+                        </span>
+                        <br>
+                        <input type="radio" class="p-2-answer" name="p2" id="p2" required>
+                        Very Good
+                        <input type="radio" class="p-2-answer" name="p2" id="p2" required>
+                        Good
+                        <input type="radio" class="p-2-answer" name="p2" id="p2" required>
+                        Satisfactory
+                        <input type="radio" class="p-2-answer" name="p2" id="p2" required>
+                        Average
+                    </div>
+                    <div class="point-3">
+                        <span class="p-3-question">
+                            Doubt clarification inside/outside the class room
+                        </span>
+                        <br>
+                        <input type="radio" class="p-3-answer" name="p3" id="p3" required>
+                        Very Good
+                        <input type="radio" class="p-3-answer" name="p3" id="p3" required>
+                        Good
+                        <input type="radio" class="p-3-answer" name="p3" id="p3" required>
+                        Satisfactory
+                        <input type="radio" class="p-3-answer" name="p3" id="p3" required>
+                        Average
+                    </div>
+                    <div class="point-4">
+                        <span class="p-4-question">
+                            Voice clearance while teaching
+                        </span>
+                        <br>
+                        <input type="radio" class="p-4-answer" name="p4" id="p4" required>
+                        Very Good
+                        <input type="radio" class="p-4-answer" name="p4" id="p4" required>
+                        Good
+                        <input type="radio" class="p-4-answer" name="p4" id="p4" required>
+                        Satisfactory
+                        <input type="radio" class="p-4-answer" name="p4" id="p4" required>
+                        Average
+                    </div>
+                    <div class="point-5">
+                        <span class="p-5-question">
+                            Handwritting goodness on the board
+                        </span>
+                        <br>
+                        <input type="radio" class="p-5-answer" name="p5" id="p5" required>
+                        Very Good
+                        <input type="radio" class="p-5-answer" name="p5" id="p5" required>
+                        Good
+                        <input type="radio" class="p-5-answer" name="p5" id="p5" required>
+                        Satisfactory
+                        <input type="radio" class="p-5-answer" name="p5" id="p5" required>
+                        Average
+                    </div>
+                    <div class="point-6">
+                        <span class="p-6-question">
+                            Equality among the students
+                        </span>
+                        <br>
+                        <input type="radio" class="p-6-answer" name="p6" id="p6" required>
+                        Very Good
+                        <input type="radio" class="p-6-answer" name="p6" id="p6" required>
+                        Good
+                        <input type="radio" class="p-6-answer" name="p6" id="p6" required>
+                        Satisfactory
+                        <input type="radio" class="p-6-answer" name="p6" id="p6" required>
+                        Average
+                    </div>
+                    <div class="point-7">
+                        <span class="p-7-question">
+                            Reference of books and suggesting book from library
+                        </span>
+                        <br>
+                        <input type="radio" class="p-7-answer" name="p7" id="p7" required>
+                        Very Good
+                        <input type="radio" class="p-7-answer" name="p7" id="p7" required>
+                        Good
+                        <input type="radio" class="p-7-answer" name="p7" id="p7" required>
+                        Satisfactory
+                        <input type="radio" class="p-7-answer" name="p7" id="p7" required>
+                        Average
+                    </div>
+                </div>
+                <br>
+                <div class="btn-sub">
+                    <div class="btn-cancel">
+                        <input type="reset" value="Cancel" class="cancel"></input>
+                    </div>
+                    <div class="btn-submit">
+                        <input type="submit" value="Submit" class="submit"></input>                            
+                    </div>
+                </div>
+                <br>
+                <div class="add-msg">
+                    <div class="msg-box">
+                        <span class="msg">Remarks:</span>
+                        <br>
+                        <textarea name="rem-msg" id="rem-msg" cols="30" rows="10" placeholder="Help us to improve"></textarea>
+                    </div>
+                </div>
             </div>
-            <div class="right-details">
-
-            </div>
-        </div>
-        <div class="feedback-point">
-            <div class="point-1">
-                <span class="p-1-question">
-
-                </span>
-                Very Good
-                <input type="radio" class="p-1-answer" name="p1">
-                Good
-                <input type="radio" class="p-1-answer" name="p1">
-                Satisfactory
-                <input type="radio" class="p-1-answer" name="p1">
-                Average
-                <input type="radio" class="p-1-answer" name="p1">
-            </div>
-        </div>
-        <div class="add-msg">
-
-        </div>
+        </form>
     </div>
 </body>
 </html>
